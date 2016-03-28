@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PinkDiary</string>
+	<string name="get_button">Get</string>
+	<string name="submit_button">Submit</string>
+</resources>
