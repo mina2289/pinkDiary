@@ -479,7 +479,7 @@ int id customPanel 0x7f090036
 int id decor_content_parent 0x7f09003f
 int id default_activity_button 0x7f090027
 int id disableHome 0x7f09000d
-int id displayTextView 0x7f090053
+int id displayTextView 0x7f090052
 int id edit_query 0x7f090043
 int id end 0x7f09001f
 int id end_padder 0x7f090060
@@ -492,7 +492,7 @@ int id icon 0x7f090029
 int id ifRoom 0x7f09001b
 int id image 0x7f090026
 int id info 0x7f09005f
-int id inputText 0x7f090052
+int id inputTextView 0x7f090053
 int id line1 0x7f090059
 int id line3 0x7f09005d
 int id listMode 0x7f09000a

@@ -1,5 +1,7 @@
 package com.example.pinkdiary;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,24 +13,34 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-	TextView tv1;
+	TextView tvDisplay;
+	TextView tvInput;
 	Button getButton;
 	Button submitButton;
 	EditText mEdit;
 	String newValue = "PinkDiary Yes!!";
+	Controller con;
+	public String diaryInput;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		tv1 = (TextView) findViewById(R.id.displayTextView);
-		addListenerOnButton();
+		tvDisplay = (TextView) findViewById(R.id.displayTextView);
+		tvInput = (TextView) findViewById(R.id.inputTextView);
+		addListenerOnGetButton();
+		addListenerOnSubmitButton();
+		
+		
+		// test database
+		con = new Controller(this);
+		// Inserting Contacts
+        //Log.d("Insert: ", "Inserting .."); 
+        //con.insertDB("Keep going!!");
+		//ArrayList array_list = mydb.getAllCotacts();
+        //con.getData(1);
 	}
-
-	public void actionGetButton(View v) {
-		tv1.setText(newValue);
-	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -36,26 +48,45 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-	public void addListenerOnButton() {
+	
+	public void actionGetButton() {
+		tvDisplay.setText(newValue);
+		Log.d("EditText", "test log in actiongetbutton");
+	}
+	
+	public void addListenerOnGetButton() {
 		getButton = (Button) findViewById(R.id.getButton);
 		getButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 //				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
 //				startActivity(browserIntent);
-				actionGetButton(arg0);
+				actionGetButton();
 			}
 		});
 	}
 	
+	public void actionSubmitButton() {
+		diaryInput = tvInput.getText().toString();
+		Log.d("EditText", diaryInput);
+		Log.d("EditText", "test log in actionsubmitbutton");
+		Log.d("Insert: ", "Inserting .."); 
+        con.insertDB(diaryInput);
+	}
+	
+	public String getDiaryInput() {
+		return diaryInput;
+	}
+	
 	public void addListenerOnSubmitButton() {
 		submitButton = (Button) findViewById(R.id.submitButton);
-		mEdit   = (EditText)findViewById(R.id.inputText);
+		mEdit   = (EditText)findViewById(R.id.inputTextView);
 		submitButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				newValue = mEdit.getText().toString().trim(); 
-				Log.v("EditText", mEdit.getText().toString());
+				//newValue = mEdit.getText().toString().trim(); 
+				//Log.d("EditText", mEdit.getText().toString());
+				actionSubmitButton();
 			}
 		});
 	}

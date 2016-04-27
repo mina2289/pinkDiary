@@ -25,27 +25,25 @@
         android:layout_alignParentTop="true"
         android:text="@string/submit_button" />
 
-    <EditText
-        android:id="@+id/inputText"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/getButton"
-        android:background="@drawable/textview_border"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine" >
-
-        <requestFocus />
-    </EditText>
-
     <TextView
         android:id="@+id/displayTextView"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
         android:layout_below="@+id/getButton"
         android:layout_toLeftOf="@+id/submitButton"
         android:background="@drawable/textview_border"
         android:text="@string/app_name" />
+
+    <EditText
+        android:id="@+id/inputTextView"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/displayTextView"
+        android:layout_marginTop="70dp"
+        android:layout_toLeftOf="@+id/submitButton"
+        android:background="@drawable/textview_border"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
 
 </RelativeLayout>
