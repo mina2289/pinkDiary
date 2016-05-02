@@ -32,6 +32,7 @@
         android:layout_below="@+id/getButton"
         android:layout_toLeftOf="@+id/submitButton"
         android:background="@drawable/textview_border"
+        android:textIsSelectable="true"
         android:text="@string/app_name" />
 
     <EditText
@@ -44,6 +45,7 @@
         android:background="@drawable/textview_border"
         android:ems="10"
         android:gravity="start|top"
+        android:windowSoftInputMode="adjustResize"
         android:inputType="textMultiLine" />
 
 </RelativeLayout>

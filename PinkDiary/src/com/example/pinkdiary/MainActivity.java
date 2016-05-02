@@ -3,6 +3,8 @@ package com.example.pinkdiary;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -28,6 +30,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		tvDisplay = (TextView) findViewById(R.id.displayTextView);
 		tvInput = (TextView) findViewById(R.id.inputTextView);
+		//tvDisplay.setMovementMethod(new ScrollingMovementMethod());
 		addListenerOnGetButton();
 		addListenerOnSubmitButton();
 		
@@ -50,18 +53,29 @@ public class MainActivity extends Activity {
 
 	
 	public void actionGetButton() {
-		tvDisplay.setText(newValue);
+		String newTxt = new String();
+		
+		for (ArrayList<String> list: con.fetchDB()) {
+			for (String str: list) {
+				newTxt = newTxt + " " + str;
+			}
+			newTxt += "\n";
+		}
+		
+		tvDisplay.setText(newTxt);
 		Log.d("EditText", "test log in actiongetbutton");
 	}
 	
 	public void addListenerOnGetButton() {
+		final Context context = this;
+
 		getButton = (Button) findViewById(R.id.getButton);
 		getButton.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-//				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
-//				startActivity(browserIntent);
 				actionGetButton();
+				Intent intent = new Intent(context, Main2Activity.class);
+                startActivity(intent);   
 			}
 		});
 	}
@@ -69,7 +83,6 @@ public class MainActivity extends Activity {
 	public void actionSubmitButton() {
 		diaryInput = tvInput.getText().toString();
 		Log.d("EditText", diaryInput);
-		Log.d("EditText", "test log in actionsubmitbutton");
 		Log.d("Insert: ", "Inserting .."); 
         con.insertDB(diaryInput);
 	}
