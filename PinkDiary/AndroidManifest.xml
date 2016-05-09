@@ -8,6 +8,9 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="21" />
 
+    <uses-permission android:name="com.fragment.NavigationDrawerFragment" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -23,8 +26,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:label=".Main2Activity"
-            android:name=".Main2Activity" >
+            android:name=".Main2Activity"
+            android:label=".Main2Activity" >
         </activity>
     </application>
 
