@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.0.0"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.1.0_628f529a2158f1d616e61528777ca63ebbbe9968/classes.dex" />
+    </item>
+    <item
+        jar="/Users/pengsh/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
+        jumboMode="true"
+        revision="21.0.0"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.0_24eeedec973d1b5967efc9583f2c8f8ff50b3d7d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.0.0"
+        sha1="0bddb8252ad462cf0e61a82d3153df75594e3cc3">
+        <dex dex="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_385596c5d7a4c8bfd1245b822e77e642cbbf5442/classes.dex" />
+    </item>
+    <item
+        jar="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="21.0.0"
+        sha1="cadd70f6dbb54d9a69b435393c59dad6de4f8c65">
+        <dex dex="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c67e28c91c92f9c0f45b8d557e8235b3848b2b37/classes.dex" />
+    </item>
+    <item
+        jar="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jumboMode="true"
+        revision="21.0.0"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.1.0_e7bb053af3b4922aa28c5e3fc37d8f90bc277c7c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.0.0"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.1.0_fc91312043cb36974c0c98a7a81e811a6bf190b4/classes.dex" />
+    </item>
+    <item
+        jar="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="21.0.0"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="/Users/pengsh/Documents/AndroidStudioWork/pinkDiary/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.0.1_cf322cc0eb925704ca5add4168786f63cd07b8f8/classes.dex" />
+    </item>
+
+</items>
