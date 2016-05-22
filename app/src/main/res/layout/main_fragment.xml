@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/selectButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/select_button" />
+
+    <!--<Button-->
+        <!--android:id="@+id/submitButton"-->
+        <!--style="?android:attr/buttonStyleSmall"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center|top"-->
+        <!--android:text="@string/submit_button" />-->
+
+    <ImageView
+        android:id="@+id/imageViewMain"
+        android:layout_width="350dip"
+        android:layout_height="250dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:gravity="center"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <EditText
+        android:id="@+id/inputTextView"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/imageViewMain"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textview_border"
+        android:inputType="textMultiLine"
+        android:windowSoftInputMode="adjustResize">
+
+        <requestFocus />
+    </EditText>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"></android.support.design.widget.AppBarLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="8dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@android:drawable/ic_menu_send" />
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
