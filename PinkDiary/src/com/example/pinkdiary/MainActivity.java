@@ -33,6 +33,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity { //extends Activity {
@@ -119,6 +120,9 @@ public class MainActivity extends AppCompatActivity { //extends Activity {
 				//newValue = mEdit.getText().toString().trim(); 
 				//Log.d("EditText", mEdit.getText().toString());
 				actionSubmitButton();
+				
+				// add a feedback toast
+				Toast.makeText(arg0.getContext(), "Diary sent to database!", Toast.LENGTH_SHORT).show();
 			}
 		});
 	}
